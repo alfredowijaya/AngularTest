@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="card" *ngFor="let character of characters">
+    <p class="name">{{ character.name }}</p>
+    <div class="content">
+      <p class="text-bold">Birth year</p>
+      <p class="text">{{ character.birth_year }}</p>
+    </div>
+    <div class="content">
+      <p class="text-bold">Eye Color</p>
+      <p class="text">{{ character.eye_color }}</p>
+    </div>
+    <div class="button-wrapper">
+      <button class="button" (click)="seeMore(character)">See More</button>
+    </div>
+  </div>
+</div>

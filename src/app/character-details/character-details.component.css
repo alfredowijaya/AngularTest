@@ -1,0 +1,33 @@
+.card {
+  width: 300px;
+  border: 1px lightgray solid;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.content {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.name {
+  border-bottom: 1px lightgray solid;
+  font-size: 24px;
+}
+
+.text-bold {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.text-wrapper {
+  flex: 1
+}

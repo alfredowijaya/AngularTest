@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap="wrap">
+    <div
+      class="card"
+      [fxFlex.gt-md]="regularDistribution"
+      *ngFor="let movie of movies"
+    >
+      <p class="name">{{ movie.title }}</p>
+      <div class="content">
+        <div class="text-wrapper">
+          <p class="text-bold">Directorr</p>
+        </div>
+        <div class="text-wrapper">
+          <p class="text">{{ movie.director }}</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="text-wrapper">
+          <p class="text-bold">Producer</p>
+        </div>
+        <div class="text-wrapper">
+          <p class="text">{{ movie.producer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
